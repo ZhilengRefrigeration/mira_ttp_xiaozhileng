@@ -1,0 +1,27 @@
+
+{
+  #机器人QQ号
+  QQID: '123456789',
+  #管理员QQ号
+  masterID: '123456789',
+  #机器人昵称
+   name: 小制冷,
+   #mirai-http的IP，一般为127.0.0.1
+   ip: 127.0.0.1,
+   #mirai_http的端口，根据miraittp配置文件设置
+   port: '8080',
+    #mirai_http的verifyKey，根据miraittp配置文件设置
+   verifyKey: '1234567890',
+#服务器监控是否开启  ///////开启：true,关闭：fffff;
+  fwq: 'true', 
+  #定时问候是否开启
+  dingshiwenhou: 'true',
+  #调戏女群员是否开启
+  tiaoxi: 'true', 
+  #私聊随机是否开启
+  siliao: 'true',
+  #早晚问候的时间
+  wenhou_zao_time: '8:30', 
+  wenhou_wan_time: '20:30'
+  
+  }
