@@ -62,9 +62,12 @@ public class Main {
         if (Data.getSiliao().equalsIgnoreCase("true"))
             new Buddy_chicken_soup().start();
 
+
         //启动骚扰女群员
         if (Data.getTiaoxi().equalsIgnoreCase("true"))
             new Tease_female_group_member().start();
+
+       
 
 
     }

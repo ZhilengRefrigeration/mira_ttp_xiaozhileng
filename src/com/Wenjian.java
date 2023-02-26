@@ -50,8 +50,8 @@ public class Wenjian {
         Data.setTiaoxi((String) map.get("tiaoxi"));
         Data.setFwq((String) map.get("fwq"));
         Data.setName((String) map.get("name"));
-        Data.setWenhou_wan_time((String) map.get("wenhou_zao_time"));
-        Data.setWenhou_zao_time((String) map.get("wenhou_wan_time"));
+        Data.setWenhou_wan_time((String) map.get("wenhou_wan_time"));
+        Data.setWenhou_zao_time((String) map.get("wenhou_zao_time"));
         buffer.close();
         reader.close();
     }

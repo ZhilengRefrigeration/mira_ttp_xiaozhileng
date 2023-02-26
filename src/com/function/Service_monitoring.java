@@ -42,7 +42,6 @@ public class Service_monitoring extends Thread{
             double freePhysicalMemorySize = osmxb.getFreePhysicalMemorySize();
             double value = freePhysicalMemorySize/totalvirtualMemory;
             int percentMemoryLoad = (int) ((1-value)*100);
-            //System.out.println ("cpu: = " + percentCpuLoad+" 内存： = "+percentMemoryLoad);
 
 
             for(int i = 0;i < set_list_groups_json.data.length;i ++){
@@ -59,7 +58,7 @@ public class Service_monitoring extends Thread{
 
             //休眠五秒
             try {
-                Thread.sleep(1000*5);
+                Thread.sleep(1000*60*5);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

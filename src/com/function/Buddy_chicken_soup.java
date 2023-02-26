@@ -43,7 +43,7 @@ public class Buddy_chicken_soup extends Thread {
             String str = hour+":"+minute;
             if (str.equalsIgnoreCase(Data.getDate())){
                 try {
-                   set_buddy_table = gson.fromJson(request.Get("http://49.234.80.65:2154"+"/friendList?sessionKey="+Data.getSessionkey()),Set_Buddy_table.class);
+                   set_buddy_table = gson.fromJson(request.Get( Data.getUrl()+"/friendList?sessionKey="+Data.getSessionkey()),Set_Buddy_table.class);
                 } catch (Exception e) {
                     e.printStackTrace();
 
@@ -105,7 +105,7 @@ public class Buddy_chicken_soup extends Thread {
 
                     //发送消息
                         try {
-                            request.Post("http://49.234.80.65:2154" + "/sendFriendMessage", gson.toJson(get_friend_messages));
+                            request.Post(Data.getUrl() + "/sendFriendMessage", gson.toJson(get_friend_messages));
                             System.out.println("消息已发送"+get_friend_messages.messageChain[0].text+get_friend_messages.target);
                         } catch (Exception e) {
                             System.out.println("发送消息异常");
